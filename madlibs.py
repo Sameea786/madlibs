@@ -50,9 +50,11 @@ def show_madlib_form():
     if want_to_play == "yes":
         return render_template("game.html")
 
-    else:
+    elif want_to_play == "no":
         return render_template("goodbye.html")
 
+    else:
+        return "You need to select game"
 
 @app.route('/madlib')
 def show_madlib():

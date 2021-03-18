@@ -3,23 +3,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/madlibs.css">
   <title>Game</title>
 </head>
 <body>
-  <form action="/madlib">
-    Give me your name
-    <input type="text" name="person" value="person">
-    Give me your favorite color
-    <input type="text" name="color" value="color">
-    Give me a noun
-    <input type="text" name="noun" value="noun">
-    Select an adjective
-    <select  name="adjective" value="adjective">
+<div class="game-for">
+  <form action="/madlib"  >
+    <h1>Game</h1>
+    <label>Give me your name</label>
+    <input type="text" name="person"><br><br>
+    <label>Give me your favorite color</label>
+    <input type="text" name="color"><br><br>
+    <label>Give me a noun</label>
+    <input type="text" name="noun"><br><br>
+    <label>Select an adjective</label>
+    <select  name="adjective">
         <option value="happy">Happy</option>
         <option value="long">Long</option>
         <option value="beautiful">Beautifull</option>
-    </select>
+    </select><br><br>
     <button>Submit</button>
   </form>
+</div>
 </body>
 </html>
